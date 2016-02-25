@@ -9,16 +9,22 @@
 	using namespace std;
 	int main(){
 	    
-	    AEDA::cola cola;
+	    AEDA::pila pila;
 
-	    cola.push('H');
-	    cola.push('A');
-	    cola.pop();
-	    cola.push('O');
-	    cola.push('L');
-	    cola.push('A');
+	    pila.push(1);
+	    pila.push(2);
+	    pila.push(3);
+	    pila.push(4);
+	    pila.push(5);
+	    pila.insertar_ramdom(0,2);
+	
+		int a;
+		a = pila.get_size();
+		cout<< "tamaño : "<< a<<endl;
+		
+	    pila.write(cout);
 
-	    cola.write(cout);
+// metodo de insertar en el medio  y metodo get_size()
 
 	    
 

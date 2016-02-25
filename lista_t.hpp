@@ -24,6 +24,8 @@ namespace AEDA {
 
         bool empty(void) const;	
 	    ostream&  write(ostream& os) const;
+	    int get_size();
+	    void insertar_ramdom(nodo_t* n,int pos);
     };
     
 }

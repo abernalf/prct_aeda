@@ -23,6 +23,8 @@ namespace AEDA {
 		bool empty();
 
 		ostream& write(ostream& os);
+		int get_size();
+		void insertar_ramdom(TDATO c,int pos);
 
 	};
 }

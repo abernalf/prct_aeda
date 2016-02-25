@@ -3,7 +3,7 @@
 
 #include <iostream>
 using namespace std;
-typedef char TDATO;
+typedef int TDATO;
 
 namespace AEDA {
 
@@ -21,6 +21,7 @@ namespace AEDA {
 
         void set_prev(nodo_t* prev);
         nodo_t* get_prev() const;
+        void insertar_intermedio(nodo_t* n,nodo_t* next,nodo_t* prev);
 
         virtual ostream& write(ostream& os) const = 0;
         virtual TDATO get_dato(void) = 0;

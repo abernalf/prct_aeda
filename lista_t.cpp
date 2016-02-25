@@ -99,5 +99,37 @@ namespace AEDA {
 
         return os;
     }
+    
+    int lista_t::get_size(){
+        int contador;
+        
+        nodo_t* aux = beginning_;
+
+        while (aux != NULL) {
+
+            //cout << ""<<endl;
+            
+            aux = aux->get_next();
+            contador++;
+            
+        }
+        
+        return contador;
+        
+    }
+    
+    void lista_t::insertar_ramdom(nodo_t* n,int pos){
+        
+        nodo_t* actual = beginning_;
+        nodo_t* aux = beginning_->get_next();
+        
+        for(int i=0; i <= pos; i++){
+            actual = actual->get_next();
+            aux = aux->get_next();
+            
+        }
+        aux->insertar_intermedio(n,actual,aux);
+        
+    }
 
 }

@@ -31,5 +31,11 @@ namespace AEDA {
 	nodo_t* nodo_t::get_prev() const{
 		return prev_;
 	}
+	void nodo_t::insertar_intermedio(nodo_t* n,nodo_t* prev,nodo_t* next){
+		prev->set_next(n);
+		next->set_prev(n);
+		n->set_next(next);
+		n->set_prev(prev);
+	}
 
 }

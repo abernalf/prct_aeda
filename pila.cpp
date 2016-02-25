@@ -36,4 +36,17 @@ namespace AEDA{
 		list_.write(os);
 		return os;
 	}
+	
+	int pila::get_size(){
+		int a;
+		
+		a = list_.get_size();
+		return a;
+	}
+	
+	void pila::insertar_ramdom(TDATO c,int pos){
+		
+		list_.insertar_ramdom(new AEDA::lista_nodo(c),pos);
+		
+	}
 }
